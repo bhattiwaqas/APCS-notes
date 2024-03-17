@@ -1,0 +1,383 @@
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        DrawingPanel panel = new DrawingPanel(780,530); //middle 390,265
+        Graphics g = panel.getGraphics();
+        
+        Color electric = new Color(244,220,38);
+        Color tailcolor = new Color(139,69,19);
+        Color pikyellow = new Color (250,214,29);
+        g.setColor(pikyellow);
+        Polygon tail = new Polygon();
+        tail.addPoint(491,358);
+        tail.addPoint(544,338);
+        tail.addPoint(525,319);
+        tail.addPoint(573,302);
+        tail.addPoint(546,255);
+        tail.addPoint(616,242);
+        tail.addPoint(634,156);
+        tail.addPoint(444,190);
+        tail.addPoint(465,199);
+        tail.addPoint(524,293);
+        tail.addPoint(476,314);
+        
+        g.fillPolygon(tail);
+
+        g.setColor(tailcolor);
+        Polygon taildesign = new Polygon();
+        taildesign.addPoint(522,346);
+
+        taildesign.addPoint(508,339);
+        taildesign.addPoint(515,337);
+        taildesign.addPoint(517,328);
+        taildesign.addPoint(526,335);
+        taildesign.addPoint(527,326);
+        taildesign.addPoint(537,331);
+        taildesign.addPoint(545,338);
+        taildesign.addPoint(520,348);
+
+
+        g.fillPolygon(taildesign);
+
+        g.setColor(Color.BLACK);
+        g.drawPolygon(tail);
+
+        /*g.drawOval(210,100,155,125);
+        g.drawOval(180,150,155,125);
+        g.drawOval(210,100,155,125);
+        g.drawOval(180,160,155,125);
+        g.fillArc(180,150,155,125,0,129);
+        g.drawOval(460,105,125,125);
+    
+        /*g.drawOval(220,80,100,250);
+        g.fillArc(220,90,100,250,0,110);
+        g.fillArc(250,0,100,250,170,120);
+        g.drawOval(250,0,100,250);
+
+        g.fillArc(220,90,100,250,0,110);
+        g.fillArc(250,0,100,250,170,120);
+        
+        g.drawOval(450,105,50,250);
+        g.drawOval(445,95,50,250);*/
+
+        g.setColor(pikyellow);
+        g.fillArc(210,30,155,125,188,134); //left ear fill
+        g.fillArc(180,90,155,125,0,128); //left ear fill
+
+        g.fillArc(450,35,50,250,89,130); //right ear fill
+        g.fillArc(445,25,50,250,340,96); //right ear fill
+
+        Polygon body = new Polygon();
+        body.addPoint(317,256);
+        body.addPoint(314,276);
+        body.addPoint(309,293);
+        body.addPoint(307,304);
+        body.addPoint(304,315);
+        body.addPoint(298,325);
+        body.addPoint(293,337);
+        body.addPoint(285,343);
+        body.addPoint(280,349);
+        body.addPoint(277,358);
+        body.addPoint(276,366);
+        body.addPoint(277,372);
+        body.addPoint(280,382);
+        body.addPoint(285,389);
+        body.addPoint(519,385);
+        body.addPoint(523,377);
+        body.addPoint(524,368);
+        body.addPoint(524,360);
+        body.addPoint(523,356);
+        body.addPoint(519,348);
+        body.addPoint(518,346);
+        body.addPoint(512,340);
+        body.addPoint(504,329);
+        body.addPoint(498,319);
+        body.addPoint(495,311);
+        body.addPoint(490,301);
+        body.addPoint(489,282);
+        body.addPoint(486,286);
+        body.addPoint(485,254);
+
+        Polygon bottombody = new Polygon();
+        bottombody.addPoint(284,388);
+        bottombody.addPoint(277,380);
+        bottombody.addPoint(272,380);
+        bottombody.addPoint(267,382);
+        bottombody.addPoint(263,391);
+        bottombody.addPoint(263,397);
+        bottombody.addPoint(270,429);
+        bottombody.addPoint(274,434);
+        bottombody.addPoint(276,438);
+        bottombody.addPoint(280,439);
+        bottombody.addPoint(285,439);
+        bottombody.addPoint(288,436);
+        bottombody.addPoint(293,428);
+        bottombody.addPoint(306,426);
+        bottombody.addPoint(326,423);
+        bottombody.addPoint(341,421);
+        bottombody.addPoint(350,450);
+        bottombody.addPoint(358,455);
+        bottombody.addPoint(362,448);
+        bottombody.addPoint(368,453);
+        bottombody.addPoint(371,448);
+        bottombody.addPoint(374,449);
+        bottombody.addPoint(376,452);
+        bottombody.addPoint(381,448);
+        bottombody.addPoint(385,451);
+        bottombody.addPoint(390,448);
+        bottombody.addPoint(395,452);
+        bottombody.addPoint(399,447);
+        bottombody.addPoint(400,432);
+        bottombody.addPoint(400,415);
+        bottombody.addPoint(413,414);
+        bottombody.addPoint(427,415);
+        bottombody.addPoint(430,415);
+        bottombody.addPoint(430,447);
+        bottombody.addPoint(437,455);
+        bottombody.addPoint(443,451);
+        bottombody.addPoint(446,456);
+        bottombody.addPoint(452,452);
+        bottombody.addPoint(455,458);
+        bottombody.addPoint(461,452);
+        bottombody.addPoint(463,458);
+        bottombody.addPoint(470,453);
+        bottombody.addPoint(472,458);
+        bottombody.addPoint(478,452);
+        bottombody.addPoint(483,440);
+        bottombody.addPoint(489,421);
+        bottombody.addPoint(499,421);
+        bottombody.addPoint(510,425);
+        bottombody.addPoint(515,426);
+        bottombody.addPoint(519,436);
+        bottombody.addPoint(525,440);
+        bottombody.addPoint(530,439);
+        bottombody.addPoint(536,435);
+        bottombody.addPoint(543,399);
+        bottombody.addPoint(541,389);
+        bottombody.addPoint(536,379);
+        bottombody.addPoint(530,376);
+        bottombody.addPoint(525,376);
+        bottombody.addPoint(522,380);
+        bottombody.addPoint(518,383);
+
+
+
+
+        g.fillPolygon(body);
+        g.fillPolygon(bottombody);
+
+        g.setColor(Color.BLACK);
+        //g.drawOval(245,415,330,100);
+        //g.drawArc(245,415,330,100,50,85); //bottom arc
+        g.drawArc(245,415,330,100,50,11);
+        g.drawArc(245,415,330,100,83,10);
+        g.drawArc(245,415,330,100,115,20);
+
+        g.drawArc(210,30,155,125,188,134); //left ear outline
+        g.drawArc(180,90,155,125,0,128); //left ear outline
+
+        g.drawArc(450,35,50,250,85,130); //right ear outline
+        g.drawArc(445,25,50,250,340,87); //right ear outline
+        
+        g.drawArc(295,92,210,200,59,75); //top arc (face)
+        g.drawArc(296,93,210,200,358,39); //right arc (face)
+        g.drawArc(294,93,210,200,150,29); //left arc (face)
+        g.drawArc(295,94,210,200,200,50); //bottom left arc (face)
+        g.drawArc(295,94,210,200,295,45); //bottom right arc (face)
+
+        g.drawOval(287,175,80,80); //left cheek outline
+        g.drawOval(430,175,80,80); //right cheek outline
+
+        /*g.drawOval(215,150,100,200); //left
+        g.drawOval(485,150,100,200); //right*/
+        g.drawArc(215,150,100,200,290,90); //left topbody
+        g.drawArc(485,150,100,200,180,70); //right topbody
+        
+        //g.drawOval(275,325,80,80);
+        g.drawArc(276,326,80,80,146,60);
+
+        g.drawLine(280,381,285,390);
+        //g.drawOval(257,380,35,115);
+        g.drawArc(257,380,35,115,80,50);
+
+        //g.drawOval(266,327,35,115);
+        g.drawArc(265,327,35,115,224,94);//left heel
+        g.drawLine(263,393,269,424);
+        g.drawLine(274,379,280,391);
+        g.drawLine(269,384,274,391);
+        g.drawLine(265,391,269,397);
+
+        //g.drawOval(445,325,80,80);
+        g.drawArc(445,325,80,80,330,63);
+        //g.drawOval(510,380,35,115);
+        g.drawArc(512,375,35,115,35,85);
+        g.drawLine(529,375,527,385);
+        g.drawLine(534,379,532,388);
+        g.drawLine(539,385,537,391);
+        //g.drawOval(510,327,35,115);
+        g.drawArc(510,327,35,115,220,94); //right heel
+        //g.drawArc(510,327,35,115,224,180);
+        g.drawLine(543,400,539,426);
+
+        g.setColor(pikyellow);
+        g.fillOval(295,93,210,200); //face
+        g.fillOval(288,175,80,80); //right cheeck fill
+        g.fillOval(430,175,80,80); //right cheeck fill
+      
+
+        g.setColor(Color.BLACK);
+
+        //g.drawOval(300,270,100,300); //left arm
+        //g.drawOval(430,270,100,300); //right arm
+        g.drawArc(300,270,100,300,350,50);
+        g.drawArc(430,270,100,300,140,50);
+
+        //g.drawOval(330,180,100,300);
+        //g.drawOval(400,180,100,300);
+        g.drawArc(330,180,100,300,195,38);
+        g.drawArc(400,180,100,300,305,38);
+
+        //left hand fingers
+        g.drawLine(350,450,358,455);
+        g.drawLine(358,455,362,448);
+        g.drawLine(362,448,368,453);
+        g.drawLine(368,453,371,448);
+        g.drawLine(371,448,374,449);
+        g.drawLine(374,449,376,452);
+        g.drawLine(376,452,381,448);
+        g.drawLine(381,448,385,451);
+        g.drawLine(385,451,390,448);
+        g.drawLine(390,448,395,452);
+        g.drawLine(395,452,399,447);
+
+        //right hand fingers
+        g.drawLine(430,447,437,455);
+        g.drawLine(437,455,443,451);
+        g.drawLine(443,451,446,456);
+        g.drawLine(446,456,452,452);
+        g.drawLine(452,452,455,458);
+        g.drawLine(455,458,461,452);
+        g.drawLine(461,452,463,458);
+        g.drawLine(463,458,470,453);
+        g.drawLine(470,453,472,458);
+        g.drawLine(472,458,478,452);
+
+        //eyes
+        g.fillOval(325,160,35,35);
+        g.fillOval(440,160,35,35);
+
+        //cheeks
+        g.setColor(Color.RED);
+        //g.drawOval(278,203,45,45);//300,225
+        //g.drawOval(475,203,45,45);
+        //g.drawArc(278,203,45,45,274,201);
+        g.fillArc(278,203,45,45,276,201);
+
+        //left cheek fill
+        Polygon leftcheek = new Polygon();
+        leftcheek.addPoint(304,245);
+        leftcheek.addPoint(299,245);
+        leftcheek.addPoint(297,242);
+        leftcheek.addPoint(291,233);
+        leftcheek.addPoint(294,234);
+        leftcheek.addPoint(289,227);
+        leftcheek.addPoint(288,220);
+        leftcheek.addPoint(288,215);
+        leftcheek.addPoint(289,218);
+        leftcheek.addPoint(287,209);//
+        leftcheek.addPoint(289,206);
+        leftcheek.addPoint(291,206);
+        leftcheek.addPoint(302,226);
+
+        //g.drawArc(475,203,45,45,65,195);
+        g.fillArc(475,203,45,45,60,200);
+        Polygon rightcheek = new Polygon();
+        rightcheek.addPoint(495,248);
+        rightcheek.addPoint(499,243);
+        rightcheek.addPoint(505,236);
+        rightcheek.addPoint(507,232);
+        rightcheek.addPoint(508,227);
+        rightcheek.addPoint(510,220);
+        rightcheek.addPoint(510,213);
+        rightcheek.addPoint(509,207);
+        rightcheek.addPoint(493,224);
+
+        g.fillPolygon(leftcheek);
+        g.fillPolygon(rightcheek);
+
+        //eyes
+        g.setColor(Color.WHITE);
+        g.fillOval(342,167,12,12);
+        g.fillOval(448,167,12,12);
+
+        g.setColor(Color.BLACK);
+        //smile
+        //g.drawOval(370,215,30,20);
+        //g.drawOval(400,215,30,20);
+        g.drawArc(370,215,30,20,200,142);
+        g.drawArc(400,215,30,20,195,142);
+
+        g.fillOval(393,200,12,6);
+
+        Polygon leftear = new Polygon();
+        leftear.addPoint(211,103);
+        leftear.addPoint(217,99);
+        leftear.addPoint(229,96);
+        leftear.addPoint(231,94);
+        leftear.addPoint(238,92);
+        leftear.addPoint(245,144);
+        leftear.addPoint(235,139);
+        leftear.addPoint(230,135);
+        leftear.addPoint(226,131);
+        leftear.addPoint(220,124);
+        leftear.addPoint(213,113);
+        leftear.addPoint(211,103);
+
+        Polygon rightear = new Polygon();
+        rightear.addPoint(480,36);
+        rightear.addPoint(484,48);
+        rightear.addPoint(488,65);
+        rightear.addPoint(457,76);
+        rightear.addPoint(459,66);
+        rightear.addPoint(461,57);
+        rightear.addPoint(464,48);
+        rightear.addPoint(468,40);
+        rightear.addPoint(472,36);
+        rightear.addPoint(478,35);
+        rightear.addPoint(480,36);
+
+        g.fillPolygon(leftear);
+        g.fillPolygon(rightear);  
+
+        g.drawString("Waqas Bhatti", 600,350);   
+
+        //electric
+        g.setColor(electric);
+        g.drawLine(285,220,262,206);
+        g.drawLine(262,206,232,218);
+        g.drawLine(232,218,193,196);
+
+        g.drawLine(280,194,270,196);
+        g.drawLine(270,196,253,168);
+        g.drawLine(253,168,216,165);
+
+        g.drawLine(234,190,191,160);
+        g.drawLine(191,160,154,173);
+
+        g.drawLine(518,226,536,210);
+        g.drawLine(536,210,564,226);
+        g.drawLine(564,226,577,205);
+
+        g.drawLine(517,210,532,162);
+        g.drawLine(532,162,567,161);
+        g.drawLine(567,161,571,141);
+
+        g.drawLine(577,285,597,270);
+        g.drawLine(597,270,638,287);
+        g.drawLine(638,287,643,263);
+
+        
+
+    }
+}
